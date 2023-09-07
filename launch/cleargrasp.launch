@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="depth_completion" pkg="cleargrasp" type="completion.py" output="screen">
+    <remap from="~color" to="/soar/head_camera/rgb/image_rect"/>
+    <remap from="~color_camera_info" to="/soar/head_camera/rgb/camera_info"/>
+    <remap from="~depth" to="/soar/head_camera/depth_registered/image_rect"/>
+  </node>
+</launch>
